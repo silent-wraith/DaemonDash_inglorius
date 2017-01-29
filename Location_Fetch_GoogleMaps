@@ -1,0 +1,15 @@
+<?php
+ $sql= "Select Status from user_activity where User_ID='1' and Activity_ID='1'";
+   $result = mysqli_query($conn, $sql);
+
+   if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "Status: " . $row["Status"].  "<br>";
+    }
+} 
+else 
+{
+    echo "0 results";
+}
+?>

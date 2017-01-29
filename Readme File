@@ -1,0 +1,29 @@
+Readme File 
+Backend Technologies Used: PHP, MSSQL Driver
+For that we first need to download xampp
+Xampp download link:https://www.apachefriends.org/index.html
+Store all the files inside the htdocs folder
+Open XAMPP Control Panel
+Start Apache, Tomcat and MySQL
+Now, download MSSQL Driver for PHP: https://www.microsoft.com/en-us/download/details.aspx?id=20098
+Download the driver version according to the PHP version that you have.
+MSSQL Driver download guidelines
+	Version support for PHP is as follows
+	Version 4.0 supports PHP 7.0+
+	Version 3.2 supports PHP 5.6, 5.5, and 5.4
+	Version 3.1 supports PHP 5.5 and 5.4
+	Version 3.0 supports PHP 5.4. 
+Click on Install Instructions for the right advice.
+Perform the following steps to download and install the Microsoft Drivers for PHP for SQL Server (example below for 4.0 version):
+1. Download SQLSRV40.EXE to a temporary directory
+2. Run SQLSRV40.EXE
+3. When prompted, enter the path to the PHP extensions directory
+4. After extracting the files, read the Installation section of the SQLSRV_Readme.htm file for next steps
+
+After installing the files in ext directory,
+Go to xampp control panel, click config button in Apache
+open php.ini
+Type the following in extension part of the file:
+extension=php_pdo_sqlsrv_56_ts.dll
+extension=php_sqlsrv_56_ts.dll
+Restart Apache, Tomcat and MySQL

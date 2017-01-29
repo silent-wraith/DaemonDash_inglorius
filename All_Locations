@@ -1,0 +1,11 @@
+<html>
+<style>
+html, body, #map_canvas {
+    height: 500px;
+    width: 500px;
+    margin: 0px;
+    padding: 0px
+}
+</style>
+<div id="map_canvas" style="width:750px; height:450px; border: 2px solid #3872ac;"></div>
+</html>
